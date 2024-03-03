@@ -26,3 +26,10 @@ svg{
     font-weight: bold;
 }
 
+footer{
+    height: 40px;
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+}
