@@ -8,8 +8,10 @@ import { NgForm } from '@angular/forms';
 })
 export class TodolistComponent implements OnInit {
   taskArray = [{ taskName: 'Brush teeth', isCompleted: false }];
-
-  constructor() { }
+  check:boolean;
+  constructor() {
+    this.check = false;
+   }
 
   ngOnInit(): void {
   }
@@ -33,7 +35,7 @@ export class TodolistComponent implements OnInit {
 
   onCheck(index: number) {
     console.log(this.taskArray);
-
+    this.check= true;
     this.taskArray[index].isCompleted = !this.taskArray[index].isCompleted;
   }
 
