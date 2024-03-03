@@ -1,3 +1,6 @@
+
+<div class="container">
+    <h3 style="padding-top: 10px;padding-bottom: 10px;">Contact Us</h3>
 <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
     <div class="form-group">
       <label for="name">Name</label>
@@ -22,8 +25,8 @@
   
     <button type="submit" [disabled]="contactForm.invalid" class="btn btn-primary">Submit</button>
     <div *ngIf="showSuccess" class="success-message">
-        <p>Your response is sent</p>
-        <img src="/src/assets/img/todo.svg" alt="Write Mark">
+        <p style="color: green;">Your response is sent !</p>
+        <!-- <img src="/src/assets/img/check.png" alt="Write Mark"> -->
     </div>
 </form>
-  
+</div>
