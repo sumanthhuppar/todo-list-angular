@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router'
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 
 import { AppComponent } from './app.component';
 import { TodolistComponent } from './todolist/todolist.component';
@@ -29,7 +32,8 @@ const appRoutes: Routes = [
   imports: [
     FormsModule,
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

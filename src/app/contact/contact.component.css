@@ -1,0 +1,18 @@
+.error-message{
+    color: red;
+}
+
+.success-message {
+    margin-top: 20px;
+  }
+  
+  .success-message p {
+    font-weight: bold;
+  }
+  
+  .success-message img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  
